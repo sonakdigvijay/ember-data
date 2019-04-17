@@ -1,12 +1,11 @@
 package com.example.emberdata.controller;
 
+import com.example.emberdata.service.EmberData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.example.emberdata.service.EmberData;
 
 @Controller
 @CrossOrigin
@@ -34,4 +33,7 @@ public class EmberDataController {
 	public String deleteUser() {
 		return emberData.deleteUser();
 	}
+
+	@RequestMapping(value = "/ping")
+	public String ping() {return "PONG";}
 }
