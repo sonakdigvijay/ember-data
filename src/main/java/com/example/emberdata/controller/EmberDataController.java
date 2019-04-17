@@ -35,5 +35,5 @@ public class EmberDataController {
 	}
 
 	@RequestMapping(value = "/ping")
-	public String ping() {return "PONG";}
+	public String ping() {return "Hello";}
 }
