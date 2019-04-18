@@ -34,7 +34,7 @@ public class EmberDataController {
 		return emberData.deleteUser();
 	}
 
-	//adding this for testing jenkins automated build trigger
+	//adding this for testing maven build
 	@RequestMapping(value = "/ping")
 	public String ping() {return "Hello";}
 }
